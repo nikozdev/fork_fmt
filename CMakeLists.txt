@@ -442,3 +442,8 @@ if (FMT_MASTER_PROJECT AND EXISTS ${gitignore})
   set(CPACK_RESOURCE_FILE_README ${PROJECT_SOURCE_DIR}/README.rst)
   include(CPack)
 endif ()
+
+# fork
+
+add_library(pFmt::lFmt ALIAS fmt)
+add_library(pFmt::lFmtHol ALIAS fmt-header-only)
